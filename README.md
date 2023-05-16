@@ -1,4 +1,4 @@
-In this Application i'm going to use MERN stack.
+In this Application I'm going to use MERN stack.
 
 1. First created the backend application files
 2. In next step i have created the front end application.
@@ -16,9 +16,9 @@ Instructions
 1. Download the code
 2. Create .env File - duplicate .env.example in backend folder and rename it to .env
 3. Setup MongoDB
-  1. Local MongoDB
-    i. Install it from here
-    ii. In .env file update MONGODB_URI=mongodb://localhost/nodejs
+   Local MongoDB
+     Install it from here
+     In .env file update MONGODB_URI=mongodb://localhost/nodejs
 4. Run Backend
   cd backend
   npm install
