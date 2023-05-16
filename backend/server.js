@@ -1,9 +1,9 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import data from './data';
-import seedRouter from './routes/seedRoutes';
-import userRouter from './routes/userRoutes';
+// import data from './data.js';
+import seedRouter from './routes/seedRoutes.js';
+import userRouter from './routes/userRoutes.js';
 
 dotenv.config();
 
