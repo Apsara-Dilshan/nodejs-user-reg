@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Store } from './Store';
 import { useContext } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
+import SignupScreen from './screens/SignupScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -44,6 +45,7 @@ function App() {
         </header>
         <Routes>
           <Route path="/signin" element={<SigninScreen />} />
+          <Route path="/signup" element={<SignupScreen />} />
         </Routes>
         <main></main>
       </div>
