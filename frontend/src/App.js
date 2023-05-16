@@ -7,6 +7,7 @@ import { Store } from './Store';
 import { useContext } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import SignupScreen from './screens/SignupScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -15,6 +16,7 @@ function App() {
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
+    window.location.href = '/signin';
   };
   return (
     <BrowserRouter>
@@ -46,6 +48,7 @@ function App() {
         <Routes>
           <Route path="/signin" element={<SigninScreen />} />
           <Route path="/signup" element={<SignupScreen />} />
+          <Route path="/profile" element={<ProfileScreen />} />
         </Routes>
         <main></main>
       </div>
